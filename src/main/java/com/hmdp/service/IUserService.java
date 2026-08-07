@@ -6,6 +6,8 @@ import com.hmdp.dto.Result;
 import com.hmdp.entity.User;
 
 import javax.servlet.http.HttpSession;
+import java.util.Collection;
+import java.util.List;
 
 /**
  * <p>
@@ -30,4 +32,6 @@ public interface IUserService extends IService<User> {
      * @return 登录结果
      */
     Result login(LoginFormDTO loginForm, HttpSession session);
+
+
 }
